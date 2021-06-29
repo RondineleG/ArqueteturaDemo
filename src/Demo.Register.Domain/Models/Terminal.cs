@@ -7,6 +7,10 @@ namespace Demo.Register.Domain.Models
 
     public class Terminal : EntityBase
     {
+        public Terminal()
+        {
+                
+        }
 
         public string NameTerminal { get; set; }
 
