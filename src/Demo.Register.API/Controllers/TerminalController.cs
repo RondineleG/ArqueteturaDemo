@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Demo.Core.Exceptions;
 using Demo.Register.API.Utilities;
 using Demo.Register.API.ViewModes;
@@ -10,6 +8,8 @@ using Demo.Register.Domain.Enums;
 using Demo.Register.Domain.Models;
 using Demo.Register.Domain.Notifications;
 using Demo.Register.Domain.Queries;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;

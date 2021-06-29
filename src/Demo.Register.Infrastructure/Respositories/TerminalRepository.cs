@@ -1,10 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Demo.Register.Domain.Enums;
+﻿using Demo.Register.Domain.Enums;
 using Demo.Register.Domain.Interfaces.Repositories;
 using Demo.Register.Domain.Models;
 using Demo.Register.Domain.Queries;
 using Demo.Register.Infrastructure.Base;
 using Demo.Register.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

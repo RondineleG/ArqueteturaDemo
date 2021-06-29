@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Demo.Register.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Demo.Register.Domain.Models;
 
 namespace Demo.Register.Infrastructure.Mapping
 {

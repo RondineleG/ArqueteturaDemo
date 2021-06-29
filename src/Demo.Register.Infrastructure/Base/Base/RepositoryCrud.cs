@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Demo.Core.Base;
+﻿using Demo.Core.Base;
 using Demo.Core.Repository;
 using Demo.Register.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

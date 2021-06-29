@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Demo.Core.Business;
+﻿using Demo.Core.Business;
 using Demo.Core.Repository;
 using Demo.Core.UnitOfWork;
 using Demo.Register.Application.ApplicationServices;
@@ -13,6 +12,7 @@ using Demo.Register.Infrastructure.Base;
 using Demo.Register.Infrastructure.Context;
 using Demo.Register.Infrastructure.Repositories;
 using Demo.Register.Infrastructure.UnitOfWork;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Demo.Register.Ioc
 {

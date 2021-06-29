@@ -1,10 +1,10 @@
+using Demo.Register.API.Configuration;
+using Demo.Register.API.Extensions;
+using Demo.Register.Ioc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Demo.Register.API.Configuration;
-using Demo.Register.API.Extensions;
-using Demo.Register.Ioc;
 
 namespace Demo.Register.API
 {

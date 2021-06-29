@@ -1,5 +1,5 @@
-﻿using FluentValidation;
-using Demo.Register.Domain.Models;
+﻿using Demo.Register.Domain.Models;
+using FluentValidation;
 
 namespace Demo.Register.Domain.Validations
 {

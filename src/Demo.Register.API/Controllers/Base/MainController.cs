@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Demo.Register.Domain.Notifications;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Demo.Register.Domain.Notifications;
 using System.Linq;
 
 namespace Demo.Register.API.Controllers

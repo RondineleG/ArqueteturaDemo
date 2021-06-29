@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Demo.Register.Domain.Models;
+﻿using Demo.Register.Domain.Models;
 using Demo.Register.Infrastructure.Extension;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace Demo.Register.Infrastructure.Context
@@ -32,7 +32,7 @@ namespace Demo.Register.Infrastructure.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           optionsBuilder.UseSqlServer(@"Server=den1.mssql8.gear.host;Database=protondb;User Id=protondb; Password=Og4Fx_F?Qca9;");
+            optionsBuilder.UseSqlServer(@"Server=den1.mssql8.gear.host;Database=protondb;User Id=protondb; Password=Og4Fx_F?Qca9;");
             // optionsBuilder.UseNpgsql(@"Host=hansken.db.elephantsql.com;Database=tnpkxfez;Username=tnpkxfez;Password=BoJ9moLDO3E7hQctzyMFveqG6QQA2dt2");
             //optionsBuilder.UseNpgsql(@"Host=tuffi.db.elephantsql.com;Database=xbkrgeuq;Username=xbkrgeuq;Password=BbQy_7dYVgluoF11ZpzI9f1O-8WudHfw");
 
