@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Proton.Core.Business
+namespace Demo.Core.Business
 {
     public interface IBusinessCrud<TEntity> where TEntity : class
     {

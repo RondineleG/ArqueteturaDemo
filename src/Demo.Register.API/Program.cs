@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Proton.Register.API
+namespace Demo.Register.API
 {
     public class Program
     {

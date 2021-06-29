@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -9,9 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Proton.Register.Application\Proton.Register.Application.csproj" />
-    <ProjectReference Include="..\Proton.Register.Domain\Proton.Register.Domain.csproj" />
-    <ProjectReference Include="..\Proton.Register.Infrastructure\Proton.Register.Infrastructure.csproj" />
+    <ProjectReference Include="..\Demo.Register.Application\Demo.Register.Application.csproj" />
+    <ProjectReference Include="..\Demo.Register.Infrastructure\Demo.Register.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

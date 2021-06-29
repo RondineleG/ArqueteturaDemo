@@ -1,10 +1,10 @@
-﻿using Proton.Register.Domain.Enums;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Queries;
+﻿using Demo.Register.Domain.Enums;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Queries;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Application.Interface
+namespace Demo.Register.Application.Interface
 {
     public interface ITerminalAppService : IAppServiceBase<Terminal>
     {

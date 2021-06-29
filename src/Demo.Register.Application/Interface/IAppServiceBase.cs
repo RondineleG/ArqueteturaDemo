@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Application.Interface
+namespace Demo.Register.Application.Interface
 {
     public interface IAppServiceBase<TEntity> where TEntity : class
     {

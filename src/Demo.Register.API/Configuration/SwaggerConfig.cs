@@ -9,7 +9,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Proton.Register.API.Configuration
+namespace Demo.Register.API.Configuration
 {
     public static class SwaggerConfig
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Proton.Core.Exceptions
+namespace Demo.Core.Exceptions
 {
     public class DomainException : Exception
     {

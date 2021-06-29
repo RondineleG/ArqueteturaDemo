@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Proton.Register.Domain.Notifications
+namespace Demo.Register.Domain.Notifications
 {
     public interface INotifier
     {

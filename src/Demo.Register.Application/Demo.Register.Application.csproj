@@ -9,8 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Proton.Register.Domain\Proton.Register.Domain.csproj" />
-    <ProjectReference Include="..\Proton.Register.Infrastructure\Proton.Register.Infrastructure.csproj" />
+    <ProjectReference Include="..\Demo.Core\Demo.Core.csproj" />
+    <ProjectReference Include="..\Demo.Register.Domain\Demo.Register.Domain.csproj" />
+    <ProjectReference Include="..\Demo.Register.Domain\Demo.Register.Domain.csproj" />
+    <ProjectReference Include="..\Demo.Register.Infrastructure\Demo.Register.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

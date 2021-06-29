@@ -1,4 +1,4 @@
-﻿namespace Proton.Register.Domain.ValueObjects
+﻿namespace Demo.Register.Domain.ValueObjects
 {
     class Address
     {

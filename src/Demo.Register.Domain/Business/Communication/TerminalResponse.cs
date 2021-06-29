@@ -1,6 +1,6 @@
-using Proton.Register.Domain.Models;
+using Demo.Register.Domain.Models;
 
-namespace Proton.Register.Domain.Business.Communication
+namespace Demo.Register.Domain.Business.Communication
 {
     public class TerminalResponse : BaseResponse<Terminal>
     {

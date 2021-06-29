@@ -1,8 +1,8 @@
-using Proton.Core.UnitOfWork;
-using Proton.Register.Infrastructure.Context;
+using Demo.Core.UnitOfWork;
+using Demo.Register.Infrastructure.Context;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Infrastructure.UnitOfWork
+namespace Demo.Register.Infrastructure.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {

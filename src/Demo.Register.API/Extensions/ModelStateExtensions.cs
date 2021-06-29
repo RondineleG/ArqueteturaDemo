@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Proton.Register.API.Extensions
+namespace Demo.Register.API.Extensions
 {
     public static class ModelStateExtensions
     {

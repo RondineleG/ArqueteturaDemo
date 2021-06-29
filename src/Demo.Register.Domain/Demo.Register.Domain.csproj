@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Proton.Core\Proton.Core.csproj" />
+    <ProjectReference Include="..\Demo.Core\Demo.Core.csproj" />
   </ItemGroup>
 
 </Project>

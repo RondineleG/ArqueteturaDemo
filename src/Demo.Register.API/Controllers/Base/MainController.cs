@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Proton.Register.Domain.Notifications;
+using Demo.Register.Domain.Notifications;
 using System.Linq;
 
-namespace Proton.Register.API.Controllers
+namespace Demo.Register.API.Controllers
 {
     [ApiController]
     public abstract class MainController : ControllerBase

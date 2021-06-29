@@ -1,4 +1,4 @@
-﻿namespace Proton.Core.Base
+﻿namespace Demo.Core.Base
 {
     public interface IDeleteEntity
     {

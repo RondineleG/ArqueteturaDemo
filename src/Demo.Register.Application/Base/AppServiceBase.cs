@@ -1,12 +1,12 @@
-﻿using Proton.Core.Business;
-using Proton.Register.Application.Interface;
-using Proton.Register.Domain.Notifications;
+﻿using Demo.Core.Business;
+using Demo.Register.Application.Interface;
+using Demo.Register.Domain.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Application.Base
+namespace Demo.Register.Application.Base
 {
     public class AppServiceBase<TEntity> : BaseNotification, IAppServiceBase<TEntity> where TEntity : class
     {

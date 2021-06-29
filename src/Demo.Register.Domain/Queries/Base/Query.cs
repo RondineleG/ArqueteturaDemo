@@ -1,4 +1,4 @@
-namespace Proton.Register.Domain.Queries
+namespace Demo.Register.Domain.Queries
 {
     public class Query
     {

@@ -1,20 +1,20 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Proton.Core.Business;
-using Proton.Core.Repository;
-using Proton.Core.UnitOfWork;
-using Proton.Register.Application.ApplicationServices;
-using Proton.Register.Application.Base;
-using Proton.Register.Application.Interface;
-using Proton.Register.Domain;
-using Proton.Register.Domain.Base;
-using Proton.Register.Domain.Interfaces.Repositories;
-using Proton.Register.Domain.Notifications;
-using Proton.Register.Infrastructure.Base;
-using Proton.Register.Infrastructure.Context;
-using Proton.Register.Infrastructure.Repositories;
-using Proton.Register.Infrastructure.UnitOfWork;
+using Demo.Core.Business;
+using Demo.Core.Repository;
+using Demo.Core.UnitOfWork;
+using Demo.Register.Application.ApplicationServices;
+using Demo.Register.Application.Base;
+using Demo.Register.Application.Interface;
+using Demo.Register.Domain;
+using Demo.Register.Domain.Base;
+using Demo.Register.Domain.Interfaces.Repositories;
+using Demo.Register.Domain.Notifications;
+using Demo.Register.Infrastructure.Base;
+using Demo.Register.Infrastructure.Context;
+using Demo.Register.Infrastructure.Repositories;
+using Demo.Register.Infrastructure.UnitOfWork;
 
-namespace Proton.Register.Ioc
+namespace Demo.Register.Ioc
 {
     public class DependencyResolver
     {

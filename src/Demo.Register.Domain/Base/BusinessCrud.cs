@@ -1,13 +1,13 @@
-﻿using Proton.Core.Business;
-using Proton.Core.Repository;
-using Proton.Core.UnitOfWork;
-using Proton.Register.Domain.Notifications;
+﻿using Demo.Core.Business;
+using Demo.Core.Repository;
+using Demo.Core.UnitOfWork;
+using Demo.Register.Domain.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Domain.Base
+namespace Demo.Register.Domain.Base
 {
     public class BusinessCrud<TEntity> : BaseNotification, IBusinessCrud<TEntity> where TEntity : class
     {

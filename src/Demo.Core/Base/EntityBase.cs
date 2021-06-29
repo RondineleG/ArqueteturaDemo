@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Proton.Core.Base
+namespace Demo.Core.Base
 {
     public abstract class EntityBase : IEntityBase, IDeleteEntity, IAuditEntity
     {

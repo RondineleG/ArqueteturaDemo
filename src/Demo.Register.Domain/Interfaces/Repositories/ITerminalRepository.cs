@@ -1,14 +1,14 @@
-﻿using Proton.Core.Repository;
-using Proton.Register.Domain.Enums;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Queries;
+﻿using Demo.Core.Repository;
+using Demo.Register.Domain.Enums;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Domain.Interfaces.Repositories
+namespace Demo.Register.Domain.Interfaces.Repositories
 {
     public interface ITerminalRepository : IRepositoryCrud<Terminal>
     {

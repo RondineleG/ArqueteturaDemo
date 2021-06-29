@@ -1,7 +1,7 @@
 using FluentValidation;
-using Proton.Register.Domain.Models;
+using Demo.Register.Domain.Models;
 
-namespace Proton.Register.Domain.Validators
+namespace Demo.Register.Domain.Validators
 {
     public class CityValidator : AbstractValidator<City>
     {

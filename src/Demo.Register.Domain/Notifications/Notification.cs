@@ -1,4 +1,4 @@
-﻿namespace Proton.Register.Domain.Notifications
+﻿namespace Demo.Register.Domain.Notifications
 {
     public class Notification
     {

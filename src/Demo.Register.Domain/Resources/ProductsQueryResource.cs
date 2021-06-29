@@ -1,4 +1,4 @@
-namespace Proton.Register.Domain.Resources
+namespace Demo.Register.Domain.Resources
 {
     public class ProductsQueryResource : QueryResource
     {

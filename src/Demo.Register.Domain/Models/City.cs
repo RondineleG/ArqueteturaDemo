@@ -1,8 +1,8 @@
-﻿using Proton.Core.Exceptions;
-using Proton.Register.Domain.Validators;
+﻿using Demo.Core.Exceptions;
+using Demo.Register.Domain.Validators;
 using System.Collections.Generic;
 
-namespace Proton.Register.Domain.Models
+namespace Demo.Register.Domain.Models
 {
     public class City : Entities.Base
     {

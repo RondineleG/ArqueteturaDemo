@@ -1,8 +1,8 @@
-﻿using Proton.Core.Base;
-using Proton.Register.Domain.Enums;
+﻿using Demo.Core.Base;
+using Demo.Register.Domain.Enums;
 using System;
 
-namespace Proton.Register.Domain.Models
+namespace Demo.Register.Domain.Models
 {
 
     public class Terminal : EntityBase

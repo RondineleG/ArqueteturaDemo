@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Reflection;
 
-namespace Proton.Core.Extension
+namespace Demo.Core.Extension
 {
     public static class EnumDescriptionExtension
     {

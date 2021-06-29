@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Proton.Register.Infrastructure.Context;
+using Demo.Register.Infrastructure.Context;
 
-namespace Proton.Register.Infrastructure.Migrations
+namespace Demo.Register.Infrastructure.Migrations
 {
     [DbContext(typeof(RegisterDataContext))]
     [Migration("20210626030407_Init")]

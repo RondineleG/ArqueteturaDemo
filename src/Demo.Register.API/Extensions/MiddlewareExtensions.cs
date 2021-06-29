@@ -5,7 +5,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace Proton.Register.API.Extensions
+namespace Demo.Register.API.Extensions
 {
     public static class MiddlewareExtensions
     {

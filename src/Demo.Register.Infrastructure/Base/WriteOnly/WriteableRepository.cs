@@ -1,9 +1,9 @@
-﻿using Proton.Core.Repository;
-using Proton.Register.Infrastructure.Context;
+﻿using Demo.Core.Repository;
+using Demo.Register.Infrastructure.Context;
 using System;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Infrastructure.Base
+namespace Demo.Register.Infrastructure.Base
 {
     public class WriteableRepository<TEntity> : IDisposable, IWriteableRepository<TEntity> where TEntity : class
     {

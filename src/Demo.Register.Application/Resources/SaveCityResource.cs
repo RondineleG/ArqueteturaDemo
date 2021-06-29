@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Proton.Register.Application.Resources
+namespace Demo.Register.Application.Resources
 {
     public class SaveCityResource
     {

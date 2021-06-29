@@ -1,21 +1,21 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Proton.Core.Exceptions;
-using Proton.Register.API.Utilities;
-using Proton.Register.API.ViewModes;
-using Proton.Register.Application.Interface;
-using Proton.Register.Application.Resources;
-using Proton.Register.Domain.Enums;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Notifications;
-using Proton.Register.Domain.Queries;
+using Demo.Core.Exceptions;
+using Demo.Register.API.Utilities;
+using Demo.Register.API.ViewModes;
+using Demo.Register.Application.Interface;
+using Demo.Register.Application.Resources;
+using Demo.Register.Domain.Enums;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Notifications;
+using Demo.Register.Domain.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Proton.Register.API.Controllers
+namespace Demo.Register.API.Controllers
 {
     [ApiController]
     [Route("/api/register/[controller]")]

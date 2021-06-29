@@ -16,8 +16,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Proton.Register.Application\Proton.Register.Application.csproj" />
-		<ProjectReference Include="..\Proton.Register.Ioc\Proton.Register.Ioc.csproj" />
+		<ProjectReference Include="..\Demo.Register.Application\Demo.Register.Application.csproj" />
+		<ProjectReference Include="..\Demo.Register.Ioc\Demo.Register.Ioc.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 using System;
 
-namespace Proton.Register.Domain.Queries
+namespace Demo.Register.Domain.Queries
 {
     public class TerminalsQuery : Query
     {

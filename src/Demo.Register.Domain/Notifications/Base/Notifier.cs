@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Proton.Register.Domain.Notifications
+namespace Demo.Register.Domain.Notifications
 {
     public class Notifier : INotifier
     {

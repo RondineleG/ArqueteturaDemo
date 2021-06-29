@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Proton.Register.Domain.Enums
+namespace Demo.Register.Domain.Enums
 {
     public enum EStatus
     {

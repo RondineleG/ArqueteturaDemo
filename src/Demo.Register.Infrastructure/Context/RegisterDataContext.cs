@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Proton.Register.Domain.Models;
-using Proton.Register.Infrastructure.Extension;
+using Demo.Register.Domain.Models;
+using Demo.Register.Infrastructure.Extension;
 using System.Linq;
 
-namespace Proton.Register.Infrastructure.Context
+namespace Demo.Register.Infrastructure.Context
 {
     public class RegisterDataContext : DbContext
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Proton.Register.Domain.Models
+namespace Demo.Register.Domain.Models
 {
     [Table("adminsetting")]
     public class AdminSetting

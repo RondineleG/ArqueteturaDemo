@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Proton.Register.API.Configuration
+namespace Demo.Register.API.Configuration
 {
     public static class ApiConfig
     {

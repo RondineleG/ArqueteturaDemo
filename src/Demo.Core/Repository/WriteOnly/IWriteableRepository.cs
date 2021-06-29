@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Proton.Core.Repository
+namespace Demo.Core.Repository
 {
     public interface IWriteableRepository<TEntity> where TEntity : class
     {

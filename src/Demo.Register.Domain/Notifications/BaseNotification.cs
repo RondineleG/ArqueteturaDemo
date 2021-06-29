@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 
-namespace Proton.Register.Domain.Notifications
+namespace Demo.Register.Domain.Notifications
 {
     public abstract class BaseNotification
     {

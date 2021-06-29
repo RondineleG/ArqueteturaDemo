@@ -1,14 +1,14 @@
-﻿using Proton.Register.Application.Base;
-using Proton.Register.Application.Interface;
-using Proton.Register.Domain;
-using Proton.Register.Domain.Enums;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Notifications;
-using Proton.Register.Domain.Queries;
+﻿using Demo.Register.Application.Base;
+using Demo.Register.Application.Interface;
+using Demo.Register.Domain;
+using Demo.Register.Domain.Enums;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Notifications;
+using Demo.Register.Domain.Queries;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Application.ApplicationServices
+namespace Demo.Register.Application.ApplicationServices
 {
     public class TerminalAppService : AppServiceBase<Terminal>, ITerminalAppService
     {

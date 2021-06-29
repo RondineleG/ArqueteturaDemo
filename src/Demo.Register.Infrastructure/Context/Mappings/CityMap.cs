@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Proton.Register.Domain.Models;
+using Demo.Register.Domain.Models;
 
-namespace Proton.Register.Infrastructure.Mapping
+namespace Demo.Register.Infrastructure.Mapping
 {
     public class CityMap : IEntityTypeConfiguration<City>
     {

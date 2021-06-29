@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Proton.Core.UnitOfWork
+namespace Demo.Core.UnitOfWork
 {
     public interface IUnitOfWork
     {

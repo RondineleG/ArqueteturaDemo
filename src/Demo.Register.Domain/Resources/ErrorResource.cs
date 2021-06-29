@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Proton.Register.Domain.Resources
+namespace Demo.Register.Domain.Resources
 {
     public class ErrorResource
     {

@@ -1,8 +1,8 @@
-using Proton.Core.Base;
+using Demo.Core.Base;
 using System;
 using System.Collections.Generic;
 
-namespace Proton.Register.Domain.Entities
+namespace Demo.Register.Domain.Entities
 {
     public abstract class Base : IDeleteEntity, IAuditEntity
     {

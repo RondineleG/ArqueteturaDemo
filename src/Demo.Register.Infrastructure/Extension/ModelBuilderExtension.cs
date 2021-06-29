@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Proton.Register.Infrastructure.Extension
+namespace Demo.Register.Infrastructure.Extension
 {
     public static class ModelBuilderExtension
     {

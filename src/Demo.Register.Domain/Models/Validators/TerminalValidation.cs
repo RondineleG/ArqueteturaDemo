@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
-using Proton.Register.Domain.Models;
+using Demo.Register.Domain.Models;
 
-namespace Proton.Register.Domain.Validations
+namespace Demo.Register.Domain.Validations
 {
     public class TerminalValidation : AbstractValidator<Terminal>
     {

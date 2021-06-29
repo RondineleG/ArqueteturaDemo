@@ -1,7 +1,7 @@
-using Proton.Register.API.ViewModes;
+using Demo.Register.API.ViewModes;
 using System.Collections.Generic;
 
-namespace Proton.Register.API.Utilities
+namespace Demo.Register.API.Utilities
 {
     public static class Responses
     {

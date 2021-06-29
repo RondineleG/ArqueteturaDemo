@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Proton.Register.Infrastructure.Migrations
+namespace Demo.Register.Infrastructure.Migrations
 {
     public partial class Init : Migration
     {

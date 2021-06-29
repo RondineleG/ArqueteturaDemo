@@ -1,6 +1,6 @@
 using System;
 
-namespace Proton.Register.Application.Resources
+namespace Demo.Register.Application.Resources
 {
     public class ProductsQueryResource : QueryResource
     {

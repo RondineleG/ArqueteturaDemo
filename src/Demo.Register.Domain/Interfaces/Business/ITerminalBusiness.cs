@@ -1,12 +1,12 @@
-﻿using Proton.Core.Business;
-using Proton.Register.Domain.Business.Communication;
-using Proton.Register.Domain.Enums;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Queries;
+﻿using Demo.Core.Business;
+using Demo.Register.Domain.Business.Communication;
+using Demo.Register.Domain.Enums;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Queries;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Domain
+namespace Demo.Register.Domain
 {
     public interface ITerminalBusiness : IBusinessCrud<Terminal>
     {

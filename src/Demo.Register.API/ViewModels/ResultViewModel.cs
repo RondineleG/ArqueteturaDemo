@@ -1,4 +1,4 @@
-namespace Proton.Register.API.ViewModes
+namespace Demo.Register.API.ViewModes
 {
     public class ResultViewModel
     {

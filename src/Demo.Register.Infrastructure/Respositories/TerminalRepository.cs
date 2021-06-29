@@ -1,17 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Proton.Register.Domain.Enums;
-using Proton.Register.Domain.Interfaces.Repositories;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Queries;
-using Proton.Register.Infrastructure.Base;
-using Proton.Register.Infrastructure.Context;
+using Demo.Register.Domain.Enums;
+using Demo.Register.Domain.Interfaces.Repositories;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Queries;
+using Demo.Register.Infrastructure.Base;
+using Demo.Register.Infrastructure.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Infrastructure.Repositories
+namespace Demo.Register.Infrastructure.Repositories
 {
     public class TerminalRepository : RepositoryCrud<Terminal>, ITerminalRepository
     {

@@ -2,11 +2,11 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Proton.Register.API.Configuration;
-using Proton.Register.API.Extensions;
-using Proton.Register.Ioc;
+using Demo.Register.API.Configuration;
+using Demo.Register.API.Extensions;
+using Demo.Register.Ioc;
 
-namespace Proton.Register.API
+namespace Demo.Register.API
 {
     public class Startup
     {

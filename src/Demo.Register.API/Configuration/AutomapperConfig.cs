@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Proton.Core.Extension;
-using Proton.Register.Domain.Enums;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Queries;
-using Proton.Register.Domain.Resources;
+using Demo.Core.Extension;
+using Demo.Register.Domain.Enums;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Queries;
+using Demo.Register.Domain.Resources;
 
-namespace Proton.Register.API.Configuration
+namespace Demo.Register.API.Configuration
 {
     public class AutomapperConfig : Profile
     {

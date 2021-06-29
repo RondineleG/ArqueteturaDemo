@@ -1,17 +1,17 @@
-﻿using Proton.Core.UnitOfWork;
-using Proton.Register.Domain.Base;
-using Proton.Register.Domain.Business.Communication;
-using Proton.Register.Domain.Enums;
-using Proton.Register.Domain.Interfaces.Repositories;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Notifications;
-using Proton.Register.Domain.Queries;
-using Proton.Register.Domain.Validations;
+﻿using Demo.Core.UnitOfWork;
+using Demo.Register.Domain.Base;
+using Demo.Register.Domain.Business.Communication;
+using Demo.Register.Domain.Enums;
+using Demo.Register.Domain.Interfaces.Repositories;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Notifications;
+using Demo.Register.Domain.Queries;
+using Demo.Register.Domain.Validations;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Domain
+namespace Demo.Register.Domain
 {
     public class TerminalBusiness : BusinessCrud<Terminal>, ITerminalBusiness
     {

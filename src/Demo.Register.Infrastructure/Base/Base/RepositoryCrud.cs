@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Proton.Core.Base;
-using Proton.Core.Repository;
-using Proton.Register.Infrastructure.Context;
+using Demo.Core.Base;
+using Demo.Core.Repository;
+using Demo.Register.Infrastructure.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Proton.Register.Infrastructure.Base
+namespace Demo.Register.Infrastructure.Base
 {
     public class RepositoryCrud<TEntity> : IRepositoryCrud<TEntity> where TEntity : class
     {

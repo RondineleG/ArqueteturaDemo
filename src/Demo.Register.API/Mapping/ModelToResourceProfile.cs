@@ -1,10 +1,10 @@
 using AutoMapper;
-using Proton.Register.API.Extensions;
-using Proton.Register.Application.Resources;
-using Proton.Register.Domain.Models;
-using Proton.Register.Domain.Queries;
+using Demo.Register.API.Extensions;
+using Demo.Register.Application.Resources;
+using Demo.Register.Domain.Models;
+using Demo.Register.Domain.Queries;
 
-namespace Proton.Register.API.Mapping
+namespace Demo.Register.API.Mapping
 {
     public class ModelToResourceProfile : Profile
     {

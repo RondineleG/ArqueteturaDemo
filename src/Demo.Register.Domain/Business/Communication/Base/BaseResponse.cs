@@ -1,4 +1,4 @@
-namespace Proton.Register.Domain.Business.Communication
+namespace Demo.Register.Domain.Business.Communication
 {
     public abstract class BaseResponse<T>
     {

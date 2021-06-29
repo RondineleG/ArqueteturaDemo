@@ -14,8 +14,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Proton.Core\Proton.Core.csproj" />
-	  <ProjectReference Include="..\Proton.Register.Domain\Proton.Register.Domain.csproj" />
+	  <ProjectReference Include="..\Demo.Core\Demo.Core.csproj" />
+	  <ProjectReference Include="..\Demo.Register.Domain\Demo.Register.Domain.csproj" />
 	</ItemGroup>
 
 </Project>
