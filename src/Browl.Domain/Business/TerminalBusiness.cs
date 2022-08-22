@@ -23,7 +23,8 @@ namespace Browl.Domain
                                 INotifier notifier) : base(terminalRepository, unitOfWork, notifier)
         {
             _terminalRepository = terminalRepository;
-            _unitOfWork = unitOfWork; ;
+            _unitOfWork = unitOfWork;
+            ;
 
         }
 
@@ -44,7 +45,7 @@ namespace Browl.Domain
             try
             {
                 var existingCity = await _terminalRepository.GetById(terminal.CityId);
-                if (existingCity == null)
+                if(existingCity == null)
                 {
                     return new TerminalResponse("Invalid city.");
                 }
@@ -54,7 +55,7 @@ namespace Browl.Domain
 
                 return new TerminalResponse(terminal);
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 return new TerminalResponse($"An error occurred when saving the terminal: {ex.Message}");
             }
@@ -62,7 +63,7 @@ namespace Browl.Domain
 
         public async Task<bool> Adicionar(Terminal terminal)
         {
-            if (!ExecuteValidation(new TerminalValidation(), terminal))
+            if(!ExecuteValidation(new TerminalValidation(), terminal))
             {
                 return false;
             }

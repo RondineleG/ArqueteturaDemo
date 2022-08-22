@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Proton.Register.API": {
+    "Browl.API": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

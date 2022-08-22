@@ -9,7 +9,7 @@ namespace Browl.Domain.Models
     {
         public Terminal()
         {
-                
+
         }
 
         public string NameTerminal { get; set; }

@@ -1,4 +1,4 @@
-using Browl.API.ViewModes;
+using Browl.Application.ViewModels;
 using System.Collections.Generic;
 
 namespace Browl.API.Utilities

@@ -1,6 +1,6 @@
 using AutoMapper;
-using Browl.API.Extensions;
 using Browl.Application.Resources;
+using Browl.Core.Extensions;
 using Browl.Domain.Models;
 using Browl.Domain.Queries;
 

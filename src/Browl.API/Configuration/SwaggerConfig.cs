@@ -48,7 +48,7 @@ namespace Browl.API.Configuration
 
         public void Configure(SwaggerGenOptions options)
         {
-            foreach (var description in provider.ApiVersionDescriptions)
+            foreach(var description in provider.ApiVersionDescriptions)
             {
                 options.SwaggerDoc(description.GroupName, CreateInfoForApiVersion(description));
             }
@@ -63,7 +63,7 @@ namespace Browl.API.Configuration
                 Description = "REST WebAPI."
             };
 
-            if (description.IsDeprecated)
+            if(description.IsDeprecated)
             {
                 info.Description += "Is Deprecated!";
             }
@@ -76,12 +76,12 @@ namespace Browl.API.Configuration
     {
         public void Apply(OpenApiOperation operation, OperationFilterContext context)
         {
-            if (operation.Parameters == null)
+            if(operation.Parameters == null)
             {
                 return;
             }
 
-            foreach (var parameter in operation.Parameters)
+            foreach(var parameter in operation.Parameters)
             {
                 var description = context.ApiDescription
                     .ParameterDescriptions
@@ -91,17 +91,17 @@ namespace Browl.API.Configuration
 
                 operation.Deprecated = OpenApiOperation.DeprecatedDefault;
 
-                if (parameter.Description == null)
+                if(parameter.Description == null)
                 {
                     parameter.Description = description.ModelMetadata?.Description;
                 }
 
-                if (routeInfo == null)
+                if(routeInfo == null)
                 {
                     continue;
                 }
 
-                if (parameter.In != ParameterLocation.Path && parameter.Schema.Default == null)
+                if(parameter.In != ParameterLocation.Path && parameter.Schema.Default == null)
                 {
                     parameter.Schema.Default = new OpenApiString(routeInfo.DefaultValue.ToString());
                 }
@@ -122,7 +122,7 @@ namespace Browl.API.Configuration
 
         public async Task Invoke(HttpContext context)
         {
-            if (context.Request.Path.StartsWithSegments("/swagger")
+            if(context.Request.Path.StartsWithSegments("/swagger")
                 && !context.User.Identity.IsAuthenticated)
             {
                 context.Response.StatusCode = StatusCodes.Status401Unauthorized;

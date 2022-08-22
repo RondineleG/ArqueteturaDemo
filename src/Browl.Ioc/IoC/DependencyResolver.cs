@@ -1,9 +1,9 @@
-﻿using Browl.Core.Business;
-using Browl.Core.Repository;
-using Browl.Core.UnitOfWork;
-using Browl.Application.ApplicationServices;
+﻿using Browl.Application.ApplicationServices;
 using Browl.Application.Base;
 using Browl.Application.Interface;
+using Browl.Core.Business;
+using Browl.Core.Repository;
+using Browl.Core.UnitOfWork;
 using Browl.Domain;
 using Browl.Domain.Base;
 using Browl.Domain.Interfaces.Repositories;

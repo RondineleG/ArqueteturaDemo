@@ -16,7 +16,7 @@ namespace Browl.Infrastructure.Base
 
         public virtual async Task<TEntity> Update(TEntity entity)
         {
-            if (entity == null)
+            if(entity == null)
             {
                 throw new ArgumentNullException($"{nameof(Update)} entity must not be null");
             }
@@ -27,14 +27,14 @@ namespace Browl.Infrastructure.Base
                 await _context.SaveChangesAsync();
                 return entity;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw new Exception($"{nameof(entity)} could not be updated: {ex.Message}");
             }
         }
         public virtual async Task<TEntity> Create(TEntity entity)
         {
-            if (entity == null)
+            if(entity == null)
             {
                 throw new ArgumentNullException($"{nameof(Create)} entity must not be null");
             }
@@ -45,7 +45,7 @@ namespace Browl.Infrastructure.Base
                 await _context.SaveChangesAsync();
                 return entity;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw new Exception($"{nameof(entity)} could not be saved: {ex.Message}");
             }

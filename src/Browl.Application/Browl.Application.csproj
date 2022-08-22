@@ -9,10 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Demo.Core\Browl.Core.csproj" />
-    <ProjectReference Include="..\Browl.Domain\BrowlBrowl.Domain.csproj" />
+    <ProjectReference Include="..\Browl.Core\Browl.Core.csproj" />
     <ProjectReference Include="..\Browl.Domain\Browl.Domain.csproj" />
-    <ProjectReference Include="..\Browl.Infrastructure\BrowlBrowl.Infrastructure.csproj" />
+    <ProjectReference Include="..\Browl.Infrastructure\Browl.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

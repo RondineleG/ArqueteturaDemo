@@ -47,7 +47,7 @@ namespace Browl.API.Configuration
 
         public static IApplicationBuilder UseApiConfig(this IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if(env.IsDevelopment())
             {
                 app.UseCors("Development");
                 app.UseDeveloperExceptionPage();

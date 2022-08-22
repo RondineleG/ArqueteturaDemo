@@ -28,12 +28,12 @@ namespace Browl.Infrastructure.Repositories
 
             IQueryable<Terminal> query = _context.Terminals;
 
-            if (!string.IsNullOrEmpty(name))
+            if(!string.IsNullOrEmpty(name))
             {
                 query = query.Where(x => x.NameTerminal.Contains(name));
             }
 
-            if (status != null)
+            if(status != null)
             {
                 query = query.Where(e => e.Status == status);
             }
@@ -61,7 +61,7 @@ namespace Browl.Infrastructure.Repositories
                                                     .Include(x => x.City)
                                                     .AsNoTracking();
 
-            if (query.CityId.HasValue && query.CityId != null)
+            if(query.CityId.HasValue && query.CityId != null)
             {
                 queryable = queryable.Where(p => p.CityId == query.CityId);
             }
@@ -83,7 +83,7 @@ namespace Browl.Infrastructure.Repositories
         public async Task<List<Terminal>> GetAllTerminals()
         {
             List<Terminal> data = await _context.Terminals.ToListAsync();
-            foreach (Terminal terminal in data)
+            foreach(Terminal terminal in data)
             {
                 terminal.City = _context.Cities.FirstOrDefault(v => v.Id == terminal.CityId);
             }

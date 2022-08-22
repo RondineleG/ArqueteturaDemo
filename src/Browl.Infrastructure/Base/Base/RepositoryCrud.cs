@@ -23,21 +23,21 @@ namespace Browl.Infrastructure.Base
 
         public virtual async Task<TEntity> Update(TEntity entity)
         {
-            if (entity == null)
+            if(entity == null)
             {
                 throw new ArgumentNullException($"{nameof(Update)} entity must not be null");
             }
 
             try
             {
-                if (typeof(IAuditEntity).IsAssignableFrom(typeof(TEntity)))
+                if(typeof(IAuditEntity).IsAssignableFrom(typeof(TEntity)))
                 {
                     ((IAuditEntity)entity).UpdatedDate = DateTime.UtcNow;
                 }
                 DbSet.Update(entity);
                 return entity;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw new Exception($"{nameof(entity)} could not be updated: {ex.Message}");
             }
@@ -45,7 +45,7 @@ namespace Browl.Infrastructure.Base
         public virtual async Task<TEntity> Create(TEntity entity)
         {
 
-            if (entity == null)
+            if(entity == null)
             {
                 throw new ArgumentNullException($"{nameof(Create)} entity must not be null");
             }
@@ -53,7 +53,7 @@ namespace Browl.Infrastructure.Base
             try
             {
 
-                if (typeof(IAuditEntity).IsAssignableFrom(typeof(TEntity)))
+                if(typeof(IAuditEntity).IsAssignableFrom(typeof(TEntity)))
                 {
                     ((IAuditEntity)entity).CreatedDate = DateTime.UtcNow;
                 }
@@ -61,7 +61,7 @@ namespace Browl.Infrastructure.Base
                 return entity;
 
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw new Exception($"{nameof(entity)} could not be saved: {ex.Message}");
             }
@@ -71,7 +71,7 @@ namespace Browl.Infrastructure.Base
         public virtual async Task Delete(TEntity entity)
         {
 
-            if (typeof(IDeleteEntity).IsAssignableFrom(typeof(TEntity)))
+            if(typeof(IDeleteEntity).IsAssignableFrom(typeof(TEntity)))
             {
                 ((IDeleteEntity)entity).IsDeleted = true;
                 DbSet.Update(entity);
@@ -100,13 +100,13 @@ namespace Browl.Infrastructure.Base
 
             try
             {
-                if (search == null)
+                if(search == null)
                 {
                     return await DbSet.AsNoTracking().ToListAsync();
                 }
                 return await DbSet.AsNoTracking().Where(search).ToListAsync();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw new Exception($"Couldn't retrieve entities: {ex.Message}");
             }

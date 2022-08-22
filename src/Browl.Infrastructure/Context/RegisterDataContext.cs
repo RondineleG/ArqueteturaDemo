@@ -25,7 +25,8 @@ namespace Browl.Infrastructure.Context
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(RegisterDataContext).Assembly);
             modelBuilder.ToLowerCaseName();
-            foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;
+            foreach(var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+                relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;
 
             base.OnModelCreating(modelBuilder);
         }

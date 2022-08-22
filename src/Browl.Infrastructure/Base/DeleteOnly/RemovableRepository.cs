@@ -18,7 +18,7 @@ namespace ProtonDemo.Repository.Base
         public virtual async Task Delete(TEntity entity)
         {
 
-            if (typeof(IDeleteEntity).IsAssignableFrom(typeof(TEntity)))
+            if(typeof(IDeleteEntity).IsAssignableFrom(typeof(TEntity)))
             {
                 ((IDeleteEntity)entity).IsDeleted = true;
                 _context.Update(entity);

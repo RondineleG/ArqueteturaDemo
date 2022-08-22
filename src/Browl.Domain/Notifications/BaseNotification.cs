@@ -14,7 +14,7 @@ namespace Browl.Domain.Notifications
 
         protected void Notify(ValidationResult validationResult)
         {
-            foreach (var error in validationResult.Errors)
+            foreach(var error in validationResult.Errors)
             {
                 Notify(error.ErrorMessage);
             }
@@ -29,7 +29,8 @@ namespace Browl.Domain.Notifications
         {
             var validator = validation.Validate(entity);
 
-            if (validator.IsValid) return true;
+            if(validator.IsValid)
+                return true;
 
             Notify(validator);
 

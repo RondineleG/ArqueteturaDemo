@@ -10,12 +10,12 @@ namespace Browl.Domain.Queries
             Page = page;
             ItemsPerPage = itemsPerPage;
 
-            if (Page <= 0)
+            if(Page <= 0)
             {
                 Page = 1;
             }
 
-            if (ItemsPerPage <= 0)
+            if(ItemsPerPage <= 0)
             {
                 ItemsPerPage = 10;
             }

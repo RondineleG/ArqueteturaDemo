@@ -1,5 +1,5 @@
-﻿using Browl.Core.Business;
-using Browl.Application.Interface;
+﻿using Browl.Application.Interface;
+using Browl.Core.Business;
 using Browl.Domain.Notifications;
 using System;
 using System.Collections.Generic;
@@ -37,7 +37,7 @@ namespace Browl.Application.Base
 
         public async Task<IEnumerable<TEntity>> GetAll(Expression<Func<TEntity, bool>> search = null)
         {
-            if (search == null)
+            if(search == null)
             {
                 return await _serviceBase.GetAll();
             }
@@ -46,7 +46,8 @@ namespace Browl.Application.Base
 
         public async Task<TEntity> GetById(Guid id)
         {
-            return await _serviceBase.GetById(id); ;
+            return await _serviceBase.GetById(id);
+            ;
         }
 
         public async Task Update(TEntity entity)

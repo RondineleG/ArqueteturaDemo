@@ -21,7 +21,7 @@ namespace Browl.API.Controllers
 
         protected ActionResult CustomResponse(object result = null)
         {
-            if (OperationIsValid())
+            if(OperationIsValid())
             {
                 return Ok(new
                 {
@@ -39,7 +39,7 @@ namespace Browl.API.Controllers
 
         protected ActionResult CustomResponse(ModelStateDictionary modelState)
         {
-            if (!modelState.IsValid)
+            if(!modelState.IsValid)
             {
                 NotifyInvalidModelError(modelState);
             }
@@ -49,7 +49,7 @@ namespace Browl.API.Controllers
         protected void NotifyInvalidModelError(ModelStateDictionary modelState)
         {
             var erros = modelState.Values.SelectMany(e => e.Errors);
-            foreach (var erro in erros)
+            foreach(var erro in erros)
             {
                 var errorMsg = erro.Exception == null ? erro.ErrorMessage : erro.Exception.Message;
                 NotifyError(errorMsg);

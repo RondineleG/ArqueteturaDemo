@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Demo.Core\Browl.Core.csproj" />
+    <ProjectReference Include="..\Browl.Core\Browl.Core.csproj" />
   </ItemGroup>
 
 </Project>

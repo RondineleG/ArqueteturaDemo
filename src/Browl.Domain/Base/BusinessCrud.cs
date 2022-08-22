@@ -53,12 +53,13 @@ namespace Browl.Domain.Base
 
         public async Task<TEntity> GetById(Guid id)
         {
-            return await _baseRepository.GetById(id); ;
+            return await _baseRepository.GetById(id);
+            ;
         }
 
         public virtual async Task<IEnumerable<TEntity>> GetAll(Expression<Func<TEntity, bool>> search = null)
         {
-            if (search == null)
+            if(search == null)
             {
                 return await _baseRepository.GetAll();
             }

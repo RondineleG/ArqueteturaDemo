@@ -1,5 +1,5 @@
 using Browl.API.Configuration;
-using Browl.API.Extensions;
+using Browl.Core.Extensions;
 using Browl.Ioc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

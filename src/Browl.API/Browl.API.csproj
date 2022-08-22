@@ -5,6 +5,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="ViewModels\**" />
+	  <Content Remove="ViewModels\**" />
+	  <EmbeddedResource Remove="ViewModels\**" />
+	  <None Remove="ViewModels\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.6" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
@@ -16,8 +23,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Browl.Application\BrowlBrowl.Application.csproj" />
-		<ProjectReference Include="..\Browl.Ioc\BrowlBrowl.Ioc.csproj" />
+	  <ProjectReference Include="..\Browl.Application\Browl.Application.csproj" />
+	  <ProjectReference Include="..\Browl.Ioc\Browl.Ioc.csproj" />
 	</ItemGroup>
 
 </Project>

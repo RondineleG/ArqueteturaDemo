@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace RegisterWS.ViewModels
+namespace Browl.Application.ViewModels
 {
     public class TerminalViewModel
     {
@@ -22,21 +22,21 @@ namespace RegisterWS.ViewModels
         public string District { get; set; }
 
         [MaxLength(50)]
-        public string? CNPJ { get; set; }
+        public string CNPJ { get; set; }
 
         [MaxLength(50)]
-        public string? NIF { get; set; }
+        public string NIF { get; set; }
 
 
         [MaxLength(50)]
-        public string? StateRegistry { get; set; }
+        public string StateRegistry { get; set; }
 
 
         [MaxLength(100)]
-        public string? SpecificInstruction { get; set; }
+        public string SpecificInstruction { get; set; }
 
         [MaxLength(100)]
-        public string? GeneralObservation { get; set; }
+        public string GeneralObservation { get; set; }
 
         public string City { get; set; }
 

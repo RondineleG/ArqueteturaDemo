@@ -28,8 +28,10 @@ namespace Browl.Core.Base
         {
             var compareTo = obj as EntityBase;
 
-            if (ReferenceEquals(this, compareTo)) return false;
-            if (ReferenceEquals(null, compareTo)) return false;
+            if(ReferenceEquals(this, compareTo))
+                return false;
+            if(ReferenceEquals(null, compareTo))
+                return false;
 
             return Id.Equals(compareTo.Id);
         }
@@ -37,10 +39,10 @@ namespace Browl.Core.Base
 
         public static bool operator ==(EntityBase a, EntityBase b)
         {
-            if (ReferenceEquals(a, null) && ReferenceEquals(b, null))
+            if(ReferenceEquals(a, null) && ReferenceEquals(b, null))
                 return true;
 
-            if (ReferenceEquals(a, null) || ReferenceEquals(b, null))
+            if(ReferenceEquals(a, null) || ReferenceEquals(b, null))
                 return false;
 
             return a.Equals(b);

@@ -28,13 +28,13 @@ namespace ProtonDemo.Repository.Base
 
             try
             {
-                if (search == null)
+                if(search == null)
                 {
                     return await _context.Set<TEntity>().AsNoTracking().ToListAsync();
                 }
                 return await _context.Set<TEntity>().AsNoTracking().Where(search).ToListAsync();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw new Exception($"Couldn't retrieve entities: {ex.Message}");
             }

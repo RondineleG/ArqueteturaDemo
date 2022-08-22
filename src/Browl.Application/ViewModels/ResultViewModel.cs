@@ -1,4 +1,4 @@
-namespace Browl.API.ViewModes
+namespace Browl.Application.ViewModels
 {
     public class ResultViewModel
     {

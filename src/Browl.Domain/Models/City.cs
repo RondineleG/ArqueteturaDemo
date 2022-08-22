@@ -50,9 +50,9 @@ namespace Browl.Domain.Models
             var validator = new CityValidator();
             var validation = validator.Validate(this);
 
-            if (!validation.IsValid)
+            if(!validation.IsValid)
             {
-                foreach (var error in validation.Errors)
+                foreach(var error in validation.Errors)
                     _errors.Add(error.ErrorMessage);
 
                 throw new DomainException("Alguns campos estão inválidos, por favor corrija-os!", _errors);

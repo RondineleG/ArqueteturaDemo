@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Reflection;
 
-namespace Browl.API.Extensions
+namespace Browl.Core.Extensions
 {
     public static class EnumExtensions
     {

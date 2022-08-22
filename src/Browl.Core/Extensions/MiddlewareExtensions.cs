@@ -5,7 +5,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace Browl.API.Extensions
+namespace Browl.Core.Extensions
 {
     public static class MiddlewareExtensions
     {

@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using Browl.Core.Exceptions;
 using Browl.API.Utilities;
-using Browl.API.ViewModes;
 using Browl.Application.Interface;
 using Browl.Application.Resources;
+using Browl.Application.ViewModels;
+using Browl.Core.Exceptions;
 using Browl.Domain.Enums;
 using Browl.Domain.Models;
 using Browl.Domain.Notifications;
@@ -50,7 +50,7 @@ namespace Browl.API.Controllers
             {
                 var terminal = await _terminalAppService.GetById(id);
 
-                if (terminal == null)
+                if(terminal == null)
                 {
                     return NotFound();
                 }
@@ -62,11 +62,11 @@ namespace Browl.API.Controllers
                     Data = terminal
                 });
             }
-            catch (DomainException ex)
+            catch(DomainException ex)
             {
                 return BadRequest(Responses.DomainErrorMessage(ex.Message));
             }
-            catch (Exception)
+            catch(Exception)
             {
                 return StatusCode(500, Responses.ApplicationErrorMessage());
             }
@@ -79,7 +79,7 @@ namespace Browl.API.Controllers
         {
             try
             {
-                if (!ModelState.IsValid)
+                if(!ModelState.IsValid)
                 {
                     return CustomResponse(ModelState);
                 }
@@ -92,11 +92,11 @@ namespace Browl.API.Controllers
                     Data = terminal
                 });
             }
-            catch (DomainException ex)
+            catch(DomainException ex)
             {
                 return BadRequest(Responses.DomainErrorMessage(ex.Message, ex.Errors));
             }
-            catch (Exception)
+            catch(Exception)
             {
                 return StatusCode(500, Responses.ApplicationErrorMessage());
             }
@@ -108,7 +108,7 @@ namespace Browl.API.Controllers
 
             try
             {
-                if (!ModelState.IsValid)
+                if(!ModelState.IsValid)
                 {
                     NotifyError("Model State is InValid ");
                     return CustomResponse(ModelState);
@@ -122,11 +122,11 @@ namespace Browl.API.Controllers
                     Data = terminal
                 });
             }
-            catch (DomainException ex)
+            catch(DomainException ex)
             {
                 return BadRequest(Responses.DomainErrorMessage(ex.Message, ex.Errors));
             }
-            catch (Exception)
+            catch(Exception)
             {
                 return StatusCode(500, Responses.ApplicationErrorMessage());
             }
@@ -138,13 +138,13 @@ namespace Browl.API.Controllers
         {
             try
             {
-                if (id != terminalViewModel.Id)
+                if(id != terminalViewModel.Id)
                 {
                     NotifyError("The ids are not equal!!");
                     return CustomResponse(terminalViewModel);
                 }
 
-                if (!ModelState.IsValid)
+                if(!ModelState.IsValid)
                 {
                     NotifyError("Model State is InValid ");
                     return CustomResponse(ModelState);
@@ -159,11 +159,11 @@ namespace Browl.API.Controllers
                     Data = terminalViewModel
                 });
             }
-            catch (DomainException ex)
+            catch(DomainException ex)
             {
                 return BadRequest(Responses.DomainErrorMessage(ex.Message, ex.Errors));
             }
-            catch (Exception)
+            catch(Exception)
             {
                 return StatusCode(500, Responses.ApplicationErrorMessage());
             }
@@ -174,7 +174,7 @@ namespace Browl.API.Controllers
         {
             var terminal = await _terminalAppService.GetById(id);
 
-            if (terminal == null)
+            if(terminal == null)
             {
                 NotifyError("The ids not can be null!");
                 return NotFound();
@@ -192,14 +192,14 @@ namespace Browl.API.Controllers
             {
                 var result = await _terminalAppService.Search(name, status);
 
-                if (result.Any())
+                if(result.Any())
                 {
                     return Ok(result);
                 }
                 NotifyError("Not found!");
                 return NotFound();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 NotifyError("Error retrieving data? from the database");
 
@@ -222,11 +222,11 @@ namespace Browl.API.Controllers
                     Data = result
                 });
             }
-            catch (DomainException ex)
+            catch(DomainException ex)
             {
                 return BadRequest(Responses.DomainErrorMessage(ex.Message));
             }
-            catch (Exception)
+            catch(Exception)
             {
                 return StatusCode(500, Responses.ApplicationErrorMessage());
             }
